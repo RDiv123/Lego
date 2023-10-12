@@ -32,18 +32,13 @@ about_div = """
     <div class="about">
         <h3>About the App</h3>
         <ul>
-            <li>This web app is to sharpen your mathematical skills.</li>
-            <li>You can copy paste any mathematical question and get similar question/questions.</li>
+            <li>This web app is to find the different legos.</li>
+            <li>You can copy paste any picture here and get details about the legos.</li>
             <li>Can use them to enhance your skills.</li>
         </ul>
     </div>
 """
-.streamlit/config.toml
-primaryColor="#F63366"
-backgroundColor="#FFFFFF"
-secondaryBackgroundColor="#F0F2F6"
-textColor="#262730"
-font="sans serif"
+
 
 #file uploader
 image = st.file_uploader(label="Upload an image",accept_multiple_files=False, help="Upload an image to classify them")
