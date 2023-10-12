@@ -25,6 +25,7 @@ def get_prediction(image_data):
 
 #setting up the title
 st.title("Legofigurine Image Classifier")#change according to your project
+st.image("https://www.vecteezy.com/vector-art/226355-two-plastic-toy-men-standing-side-by-side",caption="Legos")
 #setting up the subheader
 st.subheader("File Uploader")#change according to your project
 
