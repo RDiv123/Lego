@@ -19,6 +19,16 @@ def get_prediction(image_data):
   score = r.json()['score']
   #print("Predicted_label: {} and confidence_score: {}".format(response,score))
   return response, score
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #f0f0f0; /* You can replace this color with your desired color */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 
 #creating the web app
@@ -28,16 +38,6 @@ st.title("Legofigurine Image Classifier")#change according to your project
 st.image("https://www.vecteezy.com/vector-art/226355-two-plastic-toy-men-standing-side-by-side",caption="Legos")
 #setting up the subheader
 st.subheader("File Uploader")#change according to your project
-about_div = """
-    <div class="about">
-        <h3>About the App</h3>
-        <ul>
-            <li>This web app is to find the different legos.</li>
-            <li>You can copy paste any picture here and get details about the legos.</li>
-            <li>Can use them to enhance your skills.</li>
-        </ul>
-    </div>
-"""
 
 
 #file uploader
