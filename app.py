@@ -19,16 +19,21 @@ def get_prediction(image_data):
   score = r.json()['score']
   #print("Predicted_label: {} and confidence_score: {}".format(response,score))
   return response, score
-st.markdown(
-    """
+  
+def set_background_color(color):
+    hex_code = '#%02x%02x%02x' % color
+    page_bg_img = '''
     <style>
     body {
-        background-color: #f0f0f0; /* You can replace this color with your desired color */
+    background-color: %s;
     }
     </style>
-    """,
-    unsafe_allow_html=True,
-)
+    ''' % hex_code
+    st.markdown(page_bg_img, unsafe_allow_html=True)
+
+# Set the background color
+set_background_color((173, 216, 230))  # Light blue background color
+
 
 
 #creating the web app
