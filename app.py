@@ -65,7 +65,7 @@ if image:
     }
 
     #write file details
-    st.write(file_details)
+    st.write("This app is about find the **lego** types")
 
     #setting up the image
     st.image(img)
